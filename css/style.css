@@ -11,7 +11,7 @@ body {
 
 
 .animal_section {
-  background-image: url(../images/animal-bg.jpg);
+  /*background-image: url(../images/animal-bg.jpg);*/
   background-size: cover;
   color: #ffffff;
 }
