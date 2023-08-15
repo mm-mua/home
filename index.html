@@ -57,9 +57,10 @@
                     <!--Services--> Introduction
                 </a>
             </li>
-            <li >
-                <a οnclick= "return false;"  href="https://mm-mua.github.io/home/blog/index.html" class="nav-link">，<!--<a href="https://mm-mua.github.io/home/blog/index.html" class="nav-link"-->
+            <li class="nav-item">
+                <a id="tempblog" class="nav-link">，<!--<a href="https://mm-mua.github.io/home/blog/index.html" class="nav-link"-->
                     Blog
+                    
                 </a>
             </li>
             <li class="nav-item">
@@ -587,6 +588,14 @@ Hello World的起源要追溯到1972年，贝尔实验室著名研究员Brian Ke
                 $('html, body').animate({
                         scrollTop: $('#intro').offset().top
                     }, 800);
+            });
+            // 获取nav-item元素
+            var navItem = document.getElementById("tempblog");
+
+            // 添加点击事件监听器
+            navItem.addEventListener("click", function() {
+            // 重定向到目标页面的URL
+            window.location.href = "blog/index.html";
             });
 
             /****************** Gallery *****************
